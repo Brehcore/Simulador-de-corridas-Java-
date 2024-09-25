@@ -11,7 +11,7 @@ public class PlayerSelector {
         Players chosenPlayer = null;
 
         do {
-            System.out.println("Escolha o personagem " + playerNumber + " (Digite o número correspondente): ");
+            System.out.println("Escolha o jogador " + playerNumber + " (Digite o número correspondente): ");
             for (int i = 0; i < Players.values().length; i++) {
                 System.out.println((i + 1) + ". " + Players.values()[i].getName());
             }
@@ -28,11 +28,11 @@ public class PlayerSelector {
                     }
 
                 } else {
-                    System.out.println("Opção inválida, tente novamente.");
+                    System.out.println(" 🚫 Opção inválida, tente novamente.");
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("Entrada inválida, digite um número.");
+                System.out.println(" 🚫 Entrada inválida, digite um número.");
             }
         } while (chosenPlayer == null); //O loop é executado até que um jogador válido seja escolhido
         return chosenPlayer;

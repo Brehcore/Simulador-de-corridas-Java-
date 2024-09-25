@@ -20,6 +20,7 @@ public class RaceGame {
         //Seleciona os jogadores
         Players player1 = playerSelector.choosePlayer(1, null, sc);
         Players player2 = playerSelector.choosePlayer(2, player1, sc);
+        System.out.println("🏁🚩 A corrida entre " + player1.getName() + " e " + player2.getName() + " vai começar...");
 
         //Executa a corrida
         playRaceEngine(player1, player2);
@@ -43,7 +44,7 @@ public class RaceGame {
 
     public void playRaceEngine(Players player1, Players player2) {
         for (int round = 1; round <= 5; round++) {
-            System.out.println("\nRodada " + round);
+            System.out.println("\n 🏁 Rodada " + round);
 
             //Sorteando bloco
             String block = getRandomBlock();
@@ -69,13 +70,13 @@ public class RaceGame {
 
     public void declareWinner(Players player1, Players player2) {
         System.out.println("\nResultado final: ");
-        System.out.println(player1.getName() + " " + player1.getPontos() + " pontos.");
-        System.out.println(player2.getName() + " " + player2.getPontos() + " pontos.");
+        System.out.println(player1.getName() + " " + player1.getPontos() + " ponto(s).");
+        System.out.println(player2.getName() + " " + player2.getPontos() + " ponto(s).");
 
         if (player1.getPontos() > player2.getPontos()) {
-            System.out.println(player1.getName() + " é o vencedor da corrida!");
+            System.out.println(player1.getName() + " é o vencedor da corrida! 🏆");
         } else if (player2.getPontos() > player1.getPontos()) {
-            System.out.println(player2.getName() + " é o vencedor da corrida!");
+            System.out.println(player2.getName() + " é o vencedor da corrida! 🏆");
         } else {
             System.out.println("A corrida terminou em empate!");
         }
@@ -87,11 +88,11 @@ public class RaceGame {
         switch (block) {
             case "RETA":
                 skillPoints = diceResult + player.getVelocidade();
-                System.out.println(player.getName() + " rolou um dado de velocidade " + diceResult + " e adquiriu " + skillPoints + " pontos.");
+                System.out.println(" 🎲 " + player.getName() + " rolou um dado de velocidade " + diceResult + " e adquiriu " + skillPoints + " ponto(s).");
                 break;
             case "CURVA":
                 skillPoints = diceResult + player.getManobrabilidade();
-                System.out.println(player.getName() + " rolou um dado de manobrabilidade " + diceResult + " e adquiriu " + skillPoints + " pontos.");
+                System.out.println(" 🎲 " + player.getName() + " rolou um dado de manobrabilidade " + diceResult + " e adquiriu " + skillPoints + " ponto(s).");
                 break;
             default:
                 skillPoints = diceResult;
@@ -106,16 +107,16 @@ public class RaceGame {
         int powerResult1 = Math.max(0, diceResult1 + player1.getPoder());
         int powerResult2 = Math.max(0, diceResult2 + player2.getPoder());
 
-        System.out.println(player1.getName() + " confrontou com " + player2.getName());
+        System.out.println(" 🥊 " + player1.getName() + " confrontou com " + player2.getName());
 
         //debugging
         System.out.println("Resultados: " + player1.getName() + " = " + powerResult1 + ", " + player2.getName() + " = " + powerResult2);
 
         if (powerResult1 > powerResult2) {
-            System.out.println(player1.getName() + " venceu o confronto " + player2.getName() + " perdeu um ponto");
+            System.out.println(player1.getName() + " venceu o confronto " + player2.getName() + " perdeu um ponto 🐢");
             player2.decPontos();
         } else if (powerResult2 > powerResult1) {
-            System.out.println(player2.getName() + " venceu o confronto " + player1.getName() + " perdeu um ponto");
+            System.out.println(player2.getName() + " venceu o confronto " + player1.getName() + " perdeu um ponto 🐢");
             player1.decPontos();
         } else {
             System.out.println("Confronto empatado. Nenhum ponto foi perdido!");

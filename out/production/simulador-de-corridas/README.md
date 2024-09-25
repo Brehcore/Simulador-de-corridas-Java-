@@ -32,7 +32,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Luigi</b></p>
-        <img src="./images/Luigi.gif" alt="Luigi" width="120">
+        <img src="./images/Luigi.gif" alt="Luigi" width="80">
     </td>
     <td>
         <p>Velocidade: 3</p>
@@ -41,7 +41,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Peach</b></p>
-        <img src="./images/Peach.gif" alt="Peach" width="90">
+        <img src="./images/Peach.gif" alt="Peach" width="70">
     </td>
     <td>
         <p>Velocidade: 4</p>
