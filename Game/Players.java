@@ -1,3 +1,5 @@
+package Game;
+
 // Classe enumerada para definir ps players e os atributos de cada, foi escolhido o enum pois os dados não podem ser alterados
 public enum Players {
   PLAYER1("Mario",4, 3, 3, 0),
@@ -11,7 +13,7 @@ public enum Players {
   final int velocidade;
   final int manobrabilidade;
   final int poder;
-  final int pontos;
+  int pontos;
 
   Players(String name, int velocidade, int manobrabilidade, int poder, int pontos) {
     this.name = name;
@@ -39,5 +41,15 @@ public enum Players {
 
   public int getPontos() {
     return pontos;
+  }
+
+  public void incPontos() {
+    pontos++;
+  }
+
+  public void decPontos() {
+    if(pontos > 0) {
+      pontos--;
+    }
   }
 }

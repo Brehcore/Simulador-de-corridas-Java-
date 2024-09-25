@@ -23,7 +23,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
 <tr>
     <td align="center">
         <p><b>Mario</b></p>
-        <img src="./images/Mario.gif" alt="Mario" width="70">
+        <img src="./images/Mario.gif" alt="Mario" width="60">
     </td>
     <td>
         <p>Velocidade: 4</p>
@@ -32,7 +32,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Luigi</b></p>
-        <img src="./images/Luigi.gif" alt="Luigi" width="100">
+        <img src="./images/Luigi.gif" alt="Luigi" width="120">
     </td>
     <td>
         <p>Velocidade: 3</p>
@@ -41,7 +41,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Peach</b></p>
-        <img src="./images/Peach.gif" alt="Peach" width="70">
+        <img src="./images/Peach.gif" alt="Peach" width="90">
     </td>
     <td>
         <p>Velocidade: 4</p>
@@ -52,7 +52,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
 <tr>
     <td align="center">
         <p><b>Bowser</b></p>
-        <img src="./images/Bowser.gif" alt="Bowser" width="100">
+        <img src="./images/Bowser.gif" alt="Bowser" width="150">
     </td>
     <td>
         <p>Velocidade: 5</p>
@@ -61,7 +61,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Toad</b></p>
-        <img src="./images/Toad.gif" alt="Toad" width="70">
+        <img src="./images/Toad.gif" alt="Toad" width="45">
     </td>
     <td>
         <p>Velocidade: 3</p>
@@ -70,7 +70,7 @@ Lançada pela primeira vez em 1992 com "Super Mario Kart" para o Super Nintendo 
     </td>
     <td align="center">
         <p><b>Yoshi</b></p>
-        <img src="./images/Yoshi.gif" alt="Yoshi" width="70">
+        <img src="./images/Yoshi.gif" alt="Yoshi" width="55">
     </td>
     <td>
         <p>Velocidade: 3</p>
